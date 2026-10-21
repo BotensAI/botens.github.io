@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BOTENS Robotics: autonomous delivery robots, Smart Delivery and AIoT Technology.">
+<title>BOTENS Robotics</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body data-style="4" class="v-dark logo-on-dark">
+<header class="site-header"><div class="nav-inner">
+<a class="logo" href="#home" aria-label="BOTens Robotics home"><span class="brand-image"><img src="assets/logo.png" alt="BOTens Robotics"><img class="logo-light" src="assets/logo-light.png" alt=""></span></a><nav id="primary-nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About Us</a><a href="#robots">Products</a><details><summary>Solutions</summary><div class="dropdown">
+<a href="#delivery">Smart Delivery</a><a href="#aiot">AIoT Technology</a>
+</div></details></nav><div class="languages" aria-label="Language options (prototype only)">
+<button type="button" title="English · prototype">EN</button> / <button type="button" title="Thai · prototype only">TH</button> / <button type="button" title="Chinese · prototype only">中文</button>
+</div>
+<button id="menu-toggle" class="mobile-menu" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+</div></header><main><div class="page" id="page-home">
+<section class="hero home-hero" data-k="home-hero"><div class="hero-copy">
+<h1>Let delivery<br>arrive on its own.</h1>
+<p>BOTens leverages its global asset operation capabilities, together with technological innovation and localized services, to deliver practical and measurable intelligent service value to customers worldwide.</p>
+</div>
+<div class="video-stage">
+<video id="banner-video" muted loop playsinline preload="metadata" poster="assets/banner-poster.jpg" aria-label="BOTENS delivery robot banner video"><source src="assets/banner.mp4" type="video/mp4"></source></video><div class="video-shade"></div>
+<button class="video-toggle" id="video-toggle" type="button" aria-label="Play banner video">Play video</button>
+</div></section><section class="section statement-section" data-k="statement"><blockquote>We use autonomous delivery as the entry point, turning robots into intelligent assets that can generate sustainable revenue.</blockquote></section><section class="section " data-k="our-robots"><div class="section-title" data-title="Our Robots"><h2>Our Robots</h2></div>
+<div class="split">
+<img class="home-photo " src="assets/botens-d1.png" alt="BOTens D1 six-wheel delivery robot supplied in FIX1" loading="lazy"><div>
+<h3>Integrated Autonomous Driving / Intelligent Interaction / On-Demand Delivery</h3>
+<p>From the community entrance to the user's doorstep, enable a true end-to-end autonomous home-delivery route.</p>
+<a class="button" href="#robots">BOTens D1</a>
+</div>
+</div></section><section class="section " data-k="solutions"><div class="section-title" data-title="Solutions"><h2>Solutions</h2></div>
+<div class="grid two">
+<a class="solution card" href="#delivery"><img class="home-photo " src="assets/smart-delivery.png" alt="BOTens delivery robot in a commercial space supplied in FIX1" loading="lazy"><h3>Smart Delivery</h3>
+<p>We are committed to enabling delivery robots to adapt to diverse operating scenarios. Whether in residential communities, busy commercial districts, premium office buildings, government institutions or university campuses, we can provide targeted solutions to help robots operate stably across different scenarios.</p></a><a class="solution card" href="#aiot"><div class="blank-media " role="img" aria-label="AIoT Technology image: reserved empty area"></div>
+<h3>AIoT Technology</h3>
+<p>With our independently developed AIoT smart gate and elevator control systems, robots can move autonomously and easily between different buildings and floors.</p></a>
+</div></section><section class="section" data-k="global-presence"><div class="section-title" data-title="Global Presence">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Global Presence</h2>
+</div>
+<p class="presence-intro">BOTens Robotics leverages the 1909 Group's global channel network and business resources to accelerate the global deployment of robot asset operations and build an intelligent delivery service ecosystem that is deployable, dispatchable and operable.</p>
+<div class="placeholder map" role="img" aria-label="Global presence map: Japan · Singapore · Pattaya, Thailand · Silicon Valley, USA">
+<span class="ph-mark">＋</span><span>Global presence map: Japan · Singapore · Pattaya, Thailand · Silicon Valley, USA</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<div class="locations">
+<div>
+<span>01</span><h3>Japan</h3>
+<p>Japan</p>
+</div>
+<div>
+<span>02</span><h3>Singapore</h3>
+<p>Singapore</p>
+</div>
+<div>
+<span>03</span><h3>Thailand</h3>
+<p>Pattaya</p>
+</div>
+<div>
+<span>04</span><h3>United States</h3>
+<p>Silicon Valley</p>
+</div>
+</div></section><section class="section " data-k="news-center"><div class="section-title" data-title="News Center"><h2>News Center</h2></div>
+<div class="news-reserved" aria-label="Reserved space for future BOTENS news"></div></section>
+</div>
+<div class="page" id="page-about" hidden>
+<section class="hero" data-k="hero"><div class="hero-copy">
+<span class="eyebrow">ABOUT US</span><h1>Intelligent assets.<br>Sustainable value.</h1>
+<p>Make robots intelligent assets that generate sustainable revenue, and drive intelligent upgrades across global commercial and service industries.</p>
+<div class="actions">
+<a class="button" href="#robots">Explore BOTens D1</a><a class="button secondary" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="placeholder hero-media" role="img" aria-label="BOTENS mission: robot in a commercial environment">
+<span class="ph-mark">＋</span><span>BOTENS mission: robot in a commercial environment</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div></section><section class="section" data-k="core-capabilities"><div class="section-title" data-title="Core Capabilities">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Core Capabilities</h2>
+</div>
+<div class="split">
+<div><p>BOTens provides a system solution. The overall solution is built around “autonomous-driving robots + AIoT access infrastructure + dispatch platform + doorstep delivery capability”, connecting the full autonomous home-delivery route from the community entrance to the user's doorstep.</p></div>
+<div class="placeholder " role="img" aria-label="BOTENS system: autonomous robot, AIoT access infrastructure and dispatch platform">
+<span class="ph-mark">＋</span><span>BOTENS system: autonomous robot, AIoT access infrastructure and dispatch platform</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+</div></section><section class="section" data-k="global-presence"><div class="section-title" data-title="Global Presence">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Global Presence</h2>
+</div>
+<div class="placeholder map" role="img" aria-label="Global presence map: Japan · Singapore · Pattaya, Thailand · Silicon Valley, USA">
+<span class="ph-mark">＋</span><span>Global presence map: Japan · Singapore · Pattaya, Thailand · Silicon Valley, USA</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<div class="locations">
+<div>
+<span>01</span><h3>Japan</h3>
+<p>Japan</p>
+</div>
+<div>
+<span>02</span><h3>Singapore</h3>
+<p>Singapore</p>
+</div>
+<div>
+<span>03</span><h3>Thailand</h3>
+<p>Pattaya</p>
+</div>
+<div>
+<span>04</span><h3>United States</h3>
+<p>Silicon Valley</p>
+</div>
+</div></section><section class="section" data-k="core-team"><div class="section-title" data-title="Core Team">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Core Team</h2>
+</div>
+<div class="placeholder " role="img" aria-label="BOTENS core team photo">
+<span class="ph-mark">＋</span><span>BOTENS core team photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<p class="long-copy">BOTens Robotics brings together a core team from the robotics and technology ecosystems of the United States, China, Singapore and other markets, covering key capabilities including corporate governance and capital operations, robotics technology and AI infrastructure R&amp;D, product engineering implementation, global sales and localized services. Team members have worked at leading global companies and organizations including AWS, G42 in the UAE and KPMG. They combine autonomous-driving technology backgrounds, AI infrastructure experience, global supply-chain management capabilities and international commercial operations experience, forming an integrated capability set of “global governance + technology R&amp;D + engineering implementation + commercialization operations” to continuously support the company's global expansion in Japan, Singapore, Thailand, the United States and other markets.</p></section><section class="section" data-k="news-center"><div class="section-title" data-title="News Center">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>News Center</h2>
+</div>
+<div class="empty-state">
+<h3>News updates coming soon.</h3>
+<p>No confirmed BOTENS news items were supplied for this prototype.</p>
+</div></section>
+</div>
+<div class="page" id="page-robots" hidden>
+<section class="hero" data-k="hero"><div class="hero-copy">
+<span class="eyebrow">OUR ROBOTS</span><h1>BOTens D1</h1>
+<p>A six-wheel indoor-outdoor integrated delivery robot with high payload, long endurance and strong mobility</p>
+<div class="actions">
+<a class="button" href="#robots">Explore BOTens D1</a><a class="button secondary" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="placeholder hero-media" role="img" aria-label="BOTens D1 hero product photo">
+<span class="ph-mark">＋</span><span>BOTens D1 hero product photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div></section><section class="section" data-k="key-features-key-technologies"><div class="section-title">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Key Features · Key Technologies</h2>
+</div>
+<div class="grid two">
+<article class="card"><h3>Hardware Layer</h3>
+<p>Intelligent robot chassis, D1 high-payload platform, lightweight platform and multi-scenario upper-structure solutions. Modular design, customizable by scenario.</p></article><article class="card"><h3>Autonomous Driving Layer</h3>
+<p>Integrated indoor-outdoor autonomous driving, supporting continuous localization, perception, planning and control in unstructured indoor and outdoor environments.</p></article><article class="card"><h3>Access Layer</h3>
+<p>AIoT access-control and elevator integration, low-cost elevator control, access-control AIoT and flexible door openers, solving the robot access bottlenecks of “passing through doors, gates and elevators”.</p></article><article class="card"><h3>Operations Layer</h3>
+<p>Dispatch platform + localized operations, including route planning and dispatch, status monitoring, exception handling and data closed-loop management, supported by local delivery and continuous operating capabilities.</p></article>
+</div></section><section class="section" data-k="core-capabilities"><div class="section-title" data-title="Core Capabilities">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Core Capabilities</h2>
+</div>
+<div class="grid">
+<article class="card"><h3>High Payload</h3>
+<p>Recommended payload ≤50 kg, maximum static payload 200 kg, supporting large-item and multi-stop one-to-many delivery.</p></article><article class="card"><h3>Long Endurance</h3>
+<p>LiFePO4 battery, 12-15 hours of endurance, supports both charging and battery swapping, with a full charge in approximately 3 hours.</p></article><article class="card"><h3>Strong Mobility</h3>
+<p>Six-wheel chassis, gradeability ≤30°, obstacle clearance &lt;3 cm, supporting continuous indoor-outdoor operation.</p></article><article class="card"><h3>High Intelligence</h3>
+<p>Equipped with integrated indoor-outdoor autonomous driving, enabling autonomous localization and navigation, dynamic obstacle avoidance and route planning.</p></article><article class="card"><h3>Full Perception</h3>
+<p>Multi-sensor fusion of 3D LiDAR, wide-angle waterproof cameras, 3D depth cameras and ultrasonic radar to accurately identify pedestrians, vehicles and obstacles.</p></article><article class="card"><h3>Customizable</h3>
+<p>Body height and upper structure can be customized by scenario, using a modular platform to quickly adapt to different industries.</p></article><article class="card"><h3>Unmanned Operation</h3>
+<p>Together with the dispatch platform and AIoT access infrastructure, the robot can support 24-hour unmanned operation and remote O&amp;M.</p></article>
+</div></section><section class="section" data-k="detail-display"><div class="section-title" data-title="Detail Display">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Detail Display</h2>
+</div>
+<div class="grid">
+<article class="card"><div class="placeholder " role="img" aria-label="Hemispherical Non-Repetitive 3D LiDAR detail photo">
+<span class="ph-mark">＋</span><span>Hemispherical Non-Repetitive 3D LiDAR detail photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Hemispherical Non-Repetitive 3D LiDAR</h3>
+<p>Creates a 360° 3D map of the surrounding environment - detecting obstacles, people and walls from all directions.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Infrared High-Dynamic Wide-Angle Waterproof Camera detail photo">
+<span class="ph-mark">＋</span><span>Infrared High-Dynamic Wide-Angle Waterproof Camera detail photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Infrared High-Dynamic Wide-Angle Waterproof Camera</h3>
+<p>Maintains clear vision in low light, rain or strong light - helping the robot recognize objects and read signs.</p></article><article class="card"><div class="placeholder " role="img" aria-label="3D Depth Camera detail photo">
+<span class="ph-mark">＋</span><span>3D Depth Camera detail photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>3D Depth Camera</h3>
+<p>Measures the distance to nearby objects - critical for collision avoidance and clearance assessment.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Anti-Collision Strip / Bumper detail photo">
+<span class="ph-mark">＋</span><span>Anti-Collision Strip / Bumper detail photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Anti-Collision Strip / Bumper</h3>
+<p>Protects the robot and cushions impact if it accidentally contacts an obstacle.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Ultrasonic Radar detail photo">
+<span class="ph-mark">＋</span><span>Ultrasonic Radar detail photo</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Ultrasonic Radar</h3>
+<p>Detects objects at very close range (for example, when someone walks in front) - providing additional safety in narrow spaces.</p></article>
+</div></section><section class="section" data-k="product-specifications"><div class="section-title" data-title="Product Specifications">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Product Specifications</h2>
+</div>
+<div class="grid two">
+<div class="placeholder " role="img" aria-label="Product dimension drawing: front view">
+<span class="ph-mark">＋</span><span>Product dimension drawing: front view</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<div class="placeholder " role="img" aria-label="Product dimension drawing: left view">
+<span class="ph-mark">＋</span><span>Product dimension drawing: left view</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+</div>
+<table>
+<thead><tr>
+<th scope="col">Parameter</th>
+<th scope="col">Specification</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">Product Dimensions</th>
+<td>Length 75 cm × Width 56 cm × Height customizable</td>
+</tr>
+<tr>
+<th scope="row">Recommended Payload</th>
+<td>≤ 50 kg</td>
+</tr>
+<tr>
+<th scope="row">Maximum Static Payload</th>
+<td>200 kg</td>
+</tr>
+<tr>
+<th scope="row">Gradeability</th>
+<td>≤ 30°</td>
+</tr>
+<tr>
+<th scope="row">Autonomous Driving Speed (Recommended)</th>
+<td>0.8 m/s – 1.2 m/s</td>
+</tr>
+<tr>
+<th scope="row">Maximum Speed</th>
+<td>2.5 m/s</td>
+</tr>
+<tr>
+<th scope="row">Battery Type</th>
+<td>LiFePO4</td>
+</tr>
+<tr>
+<th scope="row">Battery Endurance</th>
+<td>12 h – 15 h (test conditions)</td>
+</tr>
+<tr>
+<th scope="row">Charging Method</th>
+<td>Charging / Battery Swap</td>
+</tr>
+<tr>
+<th scope="row">Full Charge Time</th>
+<td>Approx. 3 h</td>
+</tr>
+<tr>
+<th scope="row">Obstacle Clearance</th>
+<td>&lt; 3 cm</td>
+</tr>
+</tbody>
+</table></section>
+</div>
+<div class="page" id="page-delivery" hidden>
+<section class="hero" data-k="hero"><div class="hero-copy">
+<span class="eyebrow">SMART DELIVERY</span><h1>Let delivery<br>arrive on its own.</h1>
+<div class="actions">
+<a class="button" href="#robots">Explore BOTens D1</a><a class="button secondary" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="placeholder hero-media" role="img" aria-label="Smart delivery hero: robot completing doorstep delivery">
+<span class="ph-mark">＋</span><span>Smart delivery hero: robot completing doorstep delivery</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div></section><section class="section" data-k="smart-delivery-scenarios"><div class="section-title" data-title="Smart Delivery Scenarios">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Smart Delivery Scenarios</h2>
+</div>
+<div class="grid two">
+<article class="card"><div class="placeholder " role="img" aria-label="Community Delivery scenario image">
+<span class="ph-mark">＋</span><span>Community Delivery scenario image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Community Delivery</h3>
+<p>Can deliver parcels, takeaway food, groceries and bottled water. Supports integration with community access control and elevators, enabling contactless doorstep delivery.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Office Building scenario image">
+<span class="ph-mark">＋</span><span>Office Building scenario image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Office Building</h3>
+<p>Provides delivery of documents, parcels and beverages. Supports reception desk collection, direct delivery to workstations and cross-floor coordination, helping enterprises simplify internal logistics processes and improve operational efficiency.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Commercial Space scenario image">
+<span class="ph-mark">＋</span><span>Commercial Space scenario image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Commercial Space</h3>
+<p>Supports flexible cross-floor delivery, with intelligent dispatch and autonomous obstacle avoidance during peak periods, effectively improving service experience and operational efficiency.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Education On-Demand Delivery scenario image">
+<span class="ph-mark">＋</span><span>Education On-Demand Delivery scenario image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Education On-Demand Delivery</h3>
+<p>Covers dormitories, libraries, laboratories and other scenarios, supporting scheduled delivery and multi-stop route planning to meet the daily logistics and material delivery needs of students and staff.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Hotel Room Delivery scenario image">
+<span class="ph-mark">＋</span><span>Hotel Room Delivery scenario image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Hotel Room Delivery</h3>
+<p>Covers guest rooms, dining areas and public areas, providing guests with a convenient and efficient room-service experience while improving hotel operational efficiency.</p></article>
+</div></section><section class="section" data-k="provide-a-one-stop-robot-asset-operation-solution"><div class="section-title">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Provide a one-stop robot asset operation solution.</h2>
+</div></section>
+</div>
+<div class="page" id="page-aiot" hidden>
+<section class="hero" data-k="hero"><div class="hero-copy">
+<span class="eyebrow">AIoT TECHNOLOGY</span><h1>AIoT Scenario<br>Connectivity</h1>
+<p>Connect elevators, access control, automatic doors, smart lockers and charging equipment, enabling seamless integration with customer systems</p>
+<div class="actions">
+<a class="button" href="#robots">Explore BOTens D1</a><a class="button secondary" href="#contact">Contact Us</a>
+</div>
+</div>
+<div class="placeholder hero-media" role="img" aria-label="AIoT hero: robot, access control and elevator connectivity">
+<span class="ph-mark">＋</span><span>AIoT hero: robot, access control and elevator connectivity</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div></section><section class="section" data-k="access-control"><div class="section-title" data-title="Access Control">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Access Control</h2>
+</div>
+<div class="split">
+<p>Break down access-control barriers. With independently developed non-invasive access-control technology, robots can move freely through different controlled-access areas, from the entrance directly to every door, enabling true end-to-end autonomous delivery.</p>
+<div class="placeholder " role="img" aria-label="Access Control integration image">
+<span class="ph-mark">＋</span><span>Access Control integration image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+</div>
+<div class="grid two">
+<article class="card"><div class="placeholder " role="img" aria-label="Non-Invasive Deployment image">
+<span class="ph-mark">＋</span><span>Non-Invasive Deployment image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Non-Invasive Deployment</h3>
+<p>Installation requires no modification to existing structures or equipment, fully preserves current facilities, and enables fast, safe and low-cost robot integration.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Multi-Robot Coordination image">
+<span class="ph-mark">＋</span><span>Multi-Robot Coordination image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Multi-Robot Coordination</h3>
+<p>A single system can support unified access for multiple robots, enabling resource sharing and centralized management to meet deployment needs at different scales.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Stable Communication, Fast Response image">
+<span class="ph-mark">＋</span><span>Stable Communication, Fast Response image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Stable Communication, Fast Response</h3>
+<p>Provides reliable communication links and real-time response capability, ensuring efficient coordination between robots and control systems for a stable, safe and smooth autonomous delivery experience.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Compatible with Various Door Control Systems image">
+<span class="ph-mark">＋</span><span>Compatible with Various Door Control Systems image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Compatible with Various Door Control Systems</h3>
+<p>Supports integration with different types of door-control and access-control equipment. No modification to existing facilities is required, enabling robots to open doors autonomously and complete the full delivery access process.</p></article>
+</div></section><section class="section" data-k="elevator-integration-control"><div class="section-title">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Elevator Integration Control</h2>
+</div>
+<div class="split">
+<p>Through independently developed non-invasive elevator control technology, robots can call elevators, ride them and reach the target floor autonomously. Compatible with multiple elevator brands and models, enabling rapid deployment without modifying existing facilities.</p>
+<div class="placeholder " role="img" aria-label="Elevator Integration Control integration image">
+<span class="ph-mark">＋</span><span>Elevator Integration Control integration image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+</div>
+<div class="grid two">
+<article class="card"><div class="placeholder " role="img" aria-label="Non-Invasive Installation image">
+<span class="ph-mark">＋</span><span>Non-Invasive Installation image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Non-Invasive Installation</h3>
+<p>No modification to the existing elevator system is required, with zero impact on current facilities, enabling fast and safe deployment.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Cost-Efficient image">
+<span class="ph-mark">＋</span><span>Cost-Efficient image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Cost-Efficient</h3>
+<p>Balances cost efficiency and system stability to meet long-term operating needs in an economical and efficient way.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Stable Communication, Long-Distance Transmission image">
+<span class="ph-mark">＋</span><span>Stable Communication, Long-Distance Transmission image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Stable Communication, Long-Distance Transmission</h3>
+<p>Provides reliable communication links, ensuring stable signals and fast response even across floors or over long distances.</p></article><article class="card"><div class="placeholder " role="img" aria-label="Compatible with Mainstream Elevator Brands image">
+<span class="ph-mark">＋</span><span>Compatible with Mainstream Elevator Brands image</span><small>IMAGE / VIDEO PLACEHOLDER</small>
+</div>
+<h3>Compatible with Mainstream Elevator Brands</h3>
+<p>Supports integration with major elevator brands and models. No equipment replacement is required, enabling rapid connection and autonomous delivery.</p></article>
+</div></section><section class="section" data-k="provide-a-one-stop-robot-asset-operation-solution"><div class="section-title">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Provide a one-stop robot asset operation solution.</h2>
+</div></section>
+</div>
+<section class="section" data-k="let-s-talk-delivery" id="contact"><div class="section-title" data-title="Let’s talk delivery.">
+<span class="eyebrow">BOTENS ROBOTICS</span><h2>Let’s talk delivery.</h2>
+</div>
+<div class="contact-grid">
+<div>
+<h3>Contact Us</h3>
+<a class="email" href="mailto:marketing@botens.onmicrosoft.com">marketing@botens.onmicrosoft.com</a><p class="muted">Send opens an email draft in your email app for review.</p>
+</div>
+<form id="contact-form">
+<label>Name<input name="name" autocomplete="name" required></label><label>Email<input name="email" type="email" autocomplete="email" required></label><label>Company<input name="company" autocomplete="organization"></label><label class="full">Brief Description<textarea name="description" rows="4" required></textarea></label><div class="full">
+<button class="button" type="submit">Send</button><p id="form-status" role="status"></p>
+</div>
+</form>
+</div></section></main><footer><span>BOTens Robotics</span><nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About Us</a><a href="#robots">Our Robots</a><a href="#delivery">Smart Delivery</a><a href="#aiot">AIoT Technology</a></nav></footer><a class="button floating" href="#contact">Contact Us</a>
+</body>
+</html>
