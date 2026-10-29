@@ -47,7 +47,7 @@ body {
     object-position: top;
 }
 
-.grid-card-img {
+.grid-card-img, .inline-img {
     border-radius: 20px;
 }
 
@@ -1035,6 +1035,10 @@ footer a:hover {
 
     .hero-img {
         border-radius: 20px;
+    }
+
+    .inline-img {
+        border-radius: 0px !important;
     }
 
     .site-header {
