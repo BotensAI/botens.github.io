@@ -492,7 +492,7 @@ h3 {
     z-index: 30;
     transition: background .35s, border-color .35s;
     border-bottom: 1px solid transparent;
-    background: #ffffff
+    background: #ffffff !important
 }
 
 .site-header.is-solid {
